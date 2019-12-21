@@ -76,12 +76,15 @@ const ProjectCard: React.FC<IProjectCardProps> = ({
           <div className='project-card--details__cta'>
             <a
               href={githubLink}
-              className='github-icon'
               type='button'
               rel='noopener noreferrer'
               target='_blank'
             >
-              <img src={githubIcon} width='25px' height='25px' alt='' />
+              <img
+                className='github-icon'
+                src={githubIcon}
+                alt='github icon'
+              />
             </a>
             <a
               href={link}

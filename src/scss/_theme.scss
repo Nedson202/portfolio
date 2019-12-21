@@ -37,17 +37,31 @@
   }
 
   .project-card {
-    background: white;
+    background: #17233f;
+
+    &--hr_set {
+      hr {
+        background-color: #e4e4e4;
+      }
+    }
 
     &--title {
-      color: #0a0f1b;
+      color: #e4e4e4;
     }
 
     &--details {
-      color: #0a0f1b;
+      color: #e4e4e4;
 
-      .btn-primary i {
-        color: #0a0f1b;
+      &__cta {
+        .github-icon {
+          border: 1px solid #e4e4e4;
+          padding: 5px;
+          border-radius: 50%;
+        }
+
+        .btn-primary {
+          border: 1px solid #e4e4e4;
+        }
       }
     }
   }
