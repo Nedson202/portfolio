@@ -1,0 +1,54 @@
+[data-theme="dark"] {
+  body {
+    background: #0a0f1b;
+    color: #e4e4e4;
+
+    a {
+      color: #e4e4e4;
+    }
+
+    i {
+      color: #e4e4e4;
+    }
+  }
+
+  .navbar {
+    &-navlinks {
+      .active {
+        border-bottom: 1px solid #e4e4e4;
+      }
+
+      &--link {
+        border-top: 1px solid #e4e4e4;
+
+        &:hover {
+          border-bottom: 1px solid #e4e4e4;
+        }
+      }
+    }
+  }
+
+  .base {
+    &-cta {
+      .btn-primary {
+        color: #0a0f1b;
+      }
+    }
+  }
+
+  .project-card {
+    background: white;
+
+    &--title {
+      color: #0a0f1b;
+    }
+
+    &--details {
+      color: #0a0f1b;
+
+      .btn-primary i {
+        color: #0a0f1b;
+      }
+    }
+  }
+}

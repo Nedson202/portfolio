@@ -1,0 +1,61 @@
+.base {
+  padding: 0 60px;
+
+  &-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    &--name {
+      max-width: 60%;
+      margin-top: 15%;
+      font-size: 50px;
+    }
+
+    &--detail {
+      max-width: 50%;
+      font-size: 24px;
+      line-height: 35px;
+    }
+
+    &--scroll_indicator {
+      margin-top: 24vh;
+
+      p {
+        font-size: 20px;
+      }
+
+      i {
+        animation: 3s infinite heartbeat;
+        cursor: pointer;
+        z-index: 1;
+      }
+    }
+  }
+
+  &-cta {
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+
+    .btn-primary {
+      width: 120px;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.5); }
+  50% { transform: scale(1); }
+  75% { transform: scale(1.5); }
+  100% { transform: scale(1); }
+}
+
