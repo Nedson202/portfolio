@@ -10,12 +10,40 @@ interface IFrameProps {
 const toggleFullScreen = () => {
   if (!document.fullscreenElement) {
     document.documentElement.requestFullscreen();
+    setIframeToFullScreen();
 
     return;
   }
 
   if (document.exitFullscreen) {
     document.exitFullscreen();
+    setIframeToOriginal();
+  }
+};
+
+const setIframeToFullScreen = () => {
+  const iframeContainer = document.querySelector('.iframe') as HTMLElement;
+  const iframe = document.querySelector('iframe');
+
+  if (iframeContainer && iframe) {
+    iframeContainer.style.width = '100%';
+    iframeContainer.style.height = '100vh';
+
+    iframe.style.width = '100%';
+    iframe.style.height = '100vh';
+  }
+};
+
+const setIframeToOriginal = () => {
+  const iframeContainer = document.querySelector('.iframe') as HTMLElement;
+  const iframe = document.querySelector('iframe');
+
+  if (iframeContainer && iframe) {
+    iframeContainer.style.width = '1360px';
+    iframeContainer.style.height = '80vh';
+
+    iframe.style.width = '1360px';
+    iframe.style.height = '80vh';
   }
 };
 
@@ -41,13 +69,44 @@ const IFrame: React.FC<IFrameProps> = ({ title, link, iframeCloser }) => {
           </button>
         </div>
       </div>
+
       <iframe
         src={link}
         className='iframe-data'
-        title='none'
+        title={title}
       />
     </div>
   );
 };
 
 export default IFrame;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

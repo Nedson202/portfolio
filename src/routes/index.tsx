@@ -5,8 +5,8 @@ import NavBar from '../Components/NavBar';
 import NotFound from '../Components/NotFound';
 import RParticles from '../Components/Particles';
 import Base from '../views/Base';
+import Contact from '../views/Contact';
 import Projects from '../views/Projects';
-// import Places from '../Components/Places';
 
 const Routes = () => (
   <React.Fragment>
@@ -15,6 +15,7 @@ const Routes = () => (
     <Switch>
       <Route path='/' component={Base} exact={true} />
       <Route path='/projects' component={Projects} exact={true} />
+      <Route path='/contact' component={Contact} exact={true} />
       <Route component={NotFound} />
     </Switch>
   </React.Fragment>

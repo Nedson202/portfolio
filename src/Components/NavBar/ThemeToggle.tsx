@@ -6,13 +6,14 @@ import {
 } from '../../settings';
 
 const getCurrentTheme = () => {
-  const currentTheme = window.localStorage.getItem(THEME) || LIGHT;
+  const currentTheme: string = window.localStorage.getItem(THEME) || LIGHT;
 
   return currentTheme;
 };
 
 const loadTheme = () => {
   const currentTheme: string = getCurrentTheme();
+
   window.document.documentElement.setAttribute(THEME_ATTRIBUTE, currentTheme);
 };
 

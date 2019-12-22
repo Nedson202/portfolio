@@ -8,10 +8,12 @@ import * as serviceWorker from './serviceWorker';
 import Routes from './routes';
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Routes />
-  </BrowserRouter>,
-  document.getElementById('root')
+  (
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
+  ),
+  document.getElementById('root'),
 );
 
 // If you want your app to work offline and load faster, you can change

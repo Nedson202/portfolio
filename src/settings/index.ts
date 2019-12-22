@@ -59,7 +59,7 @@ export const PROJECT_LIST = [
       the google books api to introduce you to thousands of books. On this platform,
       you can search and filter books using full text search, bookmark books,
       make your book visible, leave reviews etc.`,
-    link: 'https//lorester-bookstore.netlify.com',
+    link: 'https://lorester-bookstore.netlify.com',
     githubLink: 'https://github.com/Nedson202/Knowledge-store-front',
   },
   {
