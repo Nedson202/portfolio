@@ -1,3 +1,5 @@
+@import "../../scss/_colors";
+
 .iframe {
   height: 100%;
   max-height: 80vh;
@@ -11,19 +13,25 @@
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 50px rgba(0, 0, 0, 0.13);
   box-shadow: 0 100px 200px rgba(0, 0, 0, 0.1), 0 120px 1000px rgba(0, 0, 0, 0.13);
 
+  &-data {
+    height: 80vh;
+    width: 1360px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background: $white-1;
+  }
+
   &-header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border-top: 1px solid #f3f3f3;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-    border-left: 1px solid #f3f3f3;
-    border-right: 1px solid #f3f3f3;
     height: 50px;
     margin-bottom: -25px;
     line-height: 50px;
-    background: #f3f3f3;
+    background: $white-2;
     position: relative;
 
     &--title {
@@ -37,7 +45,7 @@
       height: 30px;
       margin-top: 15px;
       position: absolute;
-      right: 0;
+      left: 30px;
 
       button {
         display: flex;
@@ -62,23 +70,10 @@
         border: 1px solid #e33e41;
       }
 
-      .minimize-button {
-        background: #ffbd4c;
-        border: 1px solid #e09e3e;
-      }
-
       .maximum-button {
         background: #00ca56;
         border: 1px solid #14ae46;
       }
     }
-  }
-
-  &-data {
-    height: 80vh;
-    width: 1360px;
-    border: none;
-    margin-top: 20px;
-    margin-bottom: 30px;
   }
 }

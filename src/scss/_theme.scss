@@ -65,4 +65,15 @@
       }
     }
   }
+
+  .iframe {
+    &-header {
+      background: #17233f;
+      color: #e4e4e4;
+
+      &--action_buttons {
+        color: #17233f;
+      }
+    }
+  }
 }
