@@ -48,7 +48,7 @@ export const PROJECT_LIST = [
     description: `Built on Harvard's Art Museum robust API, ART Museum offers
       a different feel of art collections and publications from the
       Harvard Art Museum archives.`,
-    link: 'https//art-museum-harvard.netlify.com/',
+    link: 'https://art-museum-harvard.netlify.com',
     githubLink: 'https://github.com/Nedson202/Harvard-arts',
   },
   {
@@ -59,7 +59,7 @@ export const PROJECT_LIST = [
       the google books api to introduce you to thousands of books. On this platform,
       you can search and filter books using full text search, bookmark books,
       make your book visible, leave reviews etc.`,
-    link: 'https//lorester-bookstore.netlify.com/',
+    link: 'https//lorester-bookstore.netlify.com',
     githubLink: 'https://github.com/Nedson202/Knowledge-store-front',
   },
   {
@@ -69,7 +69,7 @@ export const PROJECT_LIST = [
     description: `A Node.js and Vue application focused on delivering contents
       like local weather, IP data, twitter trends etc. based on a users' IP
       address.`,
-    link: 'https://ip-web-lookup.herokuapp.com/',
+    link: 'https://ip-web-lookup.herokuapp.com',
     githubLink: 'https://github.com/Nedson202/IP-lookup',
   },
   {
@@ -80,7 +80,7 @@ export const PROJECT_LIST = [
       individuals together. This platform creates awareness for businesses and
       gives the users the ability to write reviews about the businesses they
       have interacted with. `,
-    link: 'https://weconnect-samson.herokuapp.com/',
+    link: 'https://weconnect-samson.herokuapp.com',
     githubLink: 'https://github.com/Nedson202/WeConnect',
   },
 ];
