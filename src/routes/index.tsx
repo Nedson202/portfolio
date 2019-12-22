@@ -12,6 +12,7 @@ const Routes = () => (
   <React.Fragment>
     <NavBar />
     <RParticles />
+
     <Switch>
       <Route path='/' component={Base} exact={true} />
       <Route path='/projects' component={Projects} exact={true} />

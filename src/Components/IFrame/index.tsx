@@ -4,7 +4,7 @@ import './IFrame.scss';
 interface IFrameProps {
   title: string;
   link: string;
-  iframeCloser: any;
+  iframeCloser: () => void;
 }
 
 const toggleFullScreen = () => {

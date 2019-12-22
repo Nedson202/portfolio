@@ -7,7 +7,7 @@ import './ProjectCard.scss';
 
 interface IProjectCardProps {
   projectData: IProjectData;
-  setProjectID: any;
+  setProjectID: (projectID: number) => void;
   currentProjectID: number;
 }
 
@@ -24,7 +24,7 @@ const renderIFrame = (
   shouldTriggerID: number,
   currentProjectID: number,
   projectData: IProjectData,
-  setProjectID: any,
+  setProjectID: (projectID: number) => void,
 ) => {
   const { title, link } = projectData;
 
