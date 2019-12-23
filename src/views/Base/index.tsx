@@ -1,14 +1,14 @@
 import * as React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import { GET_TO_KNOW_ME } from '../../settings';
+import { ENGINEER_NAME, GET_TO_KNOW_ME } from '../../settings';
 import './Base.scss';
 
 const Base: React.FC = () => {
   return (
     <div className='base'>
       <div className='base-info'>
-        <p className='base-info--name'>Hi, I'm Samson Negedu.</p>
+        <p className='base-info--name'>Hi, I'm {ENGINEER_NAME}.</p>
         <p className='base-info--detail'>
           {GET_TO_KNOW_ME}
         </p>

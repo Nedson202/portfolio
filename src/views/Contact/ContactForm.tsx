@@ -1,24 +1,29 @@
 import * as React from 'react';
 
-import { IContactFormValues } from '../../types';
+import { IContactFormErrors, IContactFormValues } from '../../types';
 import './Contact.scss';
 
 interface IContactFormProps {
   handleChange: any;
   handleSubmit: any;
+  handleSingleFieldValidation: any;
   formValues: IContactFormValues;
+  formErrors: IContactFormErrors;
 }
 
 const ContactForm: React.FC<IContactFormProps> = ({
   handleChange, handleSubmit, formValues,
+  handleSingleFieldValidation, formErrors,
 }) => {
   const { name, email, message } = formValues;
+  const {
+    name: nameError, email: emailError, message: messageError,
+  } = formErrors;
 
   return (
     <form
       className='contact'
       onSubmit={handleSubmit}
-      method='POST'
       netlify-honeypot='bot-field'
       data-netlify='true'
     >
@@ -33,7 +38,9 @@ const ContactForm: React.FC<IContactFormProps> = ({
           name='name'
           onChange={handleChange}
           value={name}
+          onBlur={handleSingleFieldValidation}
         />
+        <span className='error-note'>{nameError}</span>
       </div>
       <div className='contact-item'>
         <label>
@@ -45,7 +52,9 @@ const ContactForm: React.FC<IContactFormProps> = ({
           name='email'
           onChange={handleChange}
           value={email}
+          onBlur={handleSingleFieldValidation}
         />
+        <span className='error-note'>{emailError}</span>
       </div>
       <div className='contact-item'>
         <label>
@@ -57,7 +66,9 @@ const ContactForm: React.FC<IContactFormProps> = ({
           rows={4}
           onChange={handleChange}
           value={message}
+          onBlur={handleSingleFieldValidation}
         />
+        <span className='error-note'>{messageError}</span>
       </div>
       <div className='contact-cta'>
         <button type='submit' className='btn btn-primary'>

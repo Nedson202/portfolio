@@ -15,23 +15,27 @@
   .navbar {
     &-navlinks {
       .active {
-        border-bottom: 1px solid #e4e4e4;
+        border-bottom: 1px solid #aa6c39;
       }
 
       &--link {
-        border-top: 1px solid #e4e4e4;
+      color: #aa6c39;
 
         &:hover {
-          border-bottom: 1px solid #e4e4e4;
+          border-bottom: 1px solid #aa6c39;
         }
       }
+    }
+
+    &-themetoggle i {
+      color: #aa6c39;
     }
   }
 
   .base {
     &-cta {
       .btn-primary {
-        border: 1px solid #e4e4e4;
+        border: 1px solid #aa6c39;
         background: transparent;
         color: #e4e4e4;
       }
@@ -43,7 +47,7 @@
 
     &--hr_set {
       hr {
-        background-color: #e4e4e4;
+        background-color: #aa6c39;
       }
     }
 
@@ -56,13 +60,14 @@
 
       &__cta {
         .github-icon {
-          border: 1px solid #e4e4e4;
+          border: 1px solid #aa6c39;
           padding: 5px;
           border-radius: 50%;
+          background: #aa6c39;
         }
 
         .btn-primary {
-          border: 1px solid #e4e4e4;
+          border: 1px solid #aa6c39;
         }
       }
     }
@@ -71,7 +76,7 @@
   .iframe {
     &-header {
       background: #17233f;
-      color: #e4e4e4;
+      color: #aa6c39;
 
       &--action_buttons {
         color: #17233f;
@@ -95,7 +100,7 @@
         font-family: Georgia, Cambria, Cochin, Times, 'Times New Roman', serif;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 50px rgba(0, 0, 0, 0.13);
         background: transparent;
-        border: 1px solid #e4e4e4;
+        border: 1px solid #aa6c39;
         border-radius: 10px;
         color: #e4e4e4;
       }
@@ -107,7 +112,7 @@
 
     &-cta {
       .btn {
-        border: 1px solid #e4e4e4;
+        border: 1px solid #aa6c39;
         background: transparent;
         color: #e4e4e4;
       }

@@ -9,6 +9,8 @@ export interface IContactFormValues {
   [key: string]: string;
 }
 
+export interface IContactFormErrors extends IContactFormValues { }
+
 export interface IEvent {
   target: {
     name: string;

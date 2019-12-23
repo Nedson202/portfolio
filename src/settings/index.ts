@@ -3,6 +3,7 @@ import IPLookup from '../assets/projects/ip-web.png';
 import KStoreWeb from '../assets/projects/k-store-web.png';
 import Weconnect from '../assets/projects/weconnect.png';
 import { IThemeProps } from '../types';
+import { IContactFormErrors } from './../types/index.d';
 
 export const STORAGE = 'storage';
 // Theme
@@ -86,3 +87,38 @@ export const PROJECT_LIST = [
 ];
 
 export const BLOG_URL = 'https://blog-samsonnegedu.netlify.com';
+
+export const errorsMap: IContactFormErrors = {
+  name: 'Please leave a name',
+  email: 'Please leave an email',
+  message: 'Please leave a message',
+};
+
+export const PARTICLES_JS_CONFIG: object = {
+  particles: {
+    number: {
+      value: 80,
+      density: {
+        enable: true,
+        value_area: 800,
+      },
+    },
+    size: {
+      value: 3,
+    },
+    line_linked: {
+      enable: true,
+      color: '#b9b9b9',
+    },
+  },
+  interactivity: {
+    events: {
+      onhover: {
+        enable: true,
+        mode: 'repulse',
+      },
+    },
+  },
+};
+
+export const ENGINEER_NAME = 'Samson Negedu';
