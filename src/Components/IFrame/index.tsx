@@ -51,9 +51,9 @@ const IFrame: React.FC<IFrameProps> = ({ title, link, iframeCloser }) => {
   return (
     <div className='iframe'>
       <div className='iframe-header'>
-        <p className='iframe-header--title'>{title}</p>
+        <p className='iframe-header__title'>{title}</p>
 
-        <div className='iframe-header--action_buttons'>
+        <div className='iframe-header__action_buttons'>
           <button
             type='button'
             className='close-button'

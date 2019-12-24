@@ -8,8 +8,8 @@ const Base: React.FC = () => {
   return (
     <div className='base'>
       <div className='base-info'>
-        <p className='base-info--name'>Hi, I'm {ENGINEER_NAME}.</p>
-        <p className='base-info--detail'>
+        <p className='base-info__name'>Hi, I'm {ENGINEER_NAME}.</p>
+        <p className='base-info__detail'>
           {GET_TO_KNOW_ME}
         </p>
       </div>

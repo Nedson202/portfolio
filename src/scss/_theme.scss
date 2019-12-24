@@ -18,7 +18,7 @@
         border-bottom: 1px solid #aa6c39;
       }
 
-      &--link {
+      &__link {
       color: #aa6c39;
 
         &:hover {
@@ -45,17 +45,17 @@
   .project-card {
     background: #17233f;
 
-    &--hr_set {
+    &__hr_set {
       hr {
         background-color: #aa6c39;
       }
     }
 
-    &--title {
+    &__title {
       color: #e4e4e4;
     }
 
-    &--details {
+    &__details {
       color: #e4e4e4;
 
       &__cta {
@@ -78,7 +78,7 @@
       background: #17233f;
       color: #aa6c39;
 
-      &--action_buttons {
+      &__action_buttons {
         color: #17233f;
       }
     }

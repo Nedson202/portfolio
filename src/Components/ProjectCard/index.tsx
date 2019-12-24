@@ -56,24 +56,24 @@ const ProjectCard: React.FC<IProjectCardProps> = ({
   return (
     <React.Fragment>
       <div className='project-card'>
-        <div className='project-card--hr_set'>
+        <div className='project-card__hr_set'>
           <hr />
           <hr />
           <hr />
         </div>
-        <p className='project-card--title'>{title}</p>
-        <div className='project-card--orb'>
+        <p className='project-card__title'>{title}</p>
+        <div className='project-card__orb'>
           <img
             src={image}
             alt='art-museum'
             onClick={() => setProjectID(key)}
           />
         </div>
-        <div className='project-card--details'>
+        <div className='project-card__details'>
           <p>
             {description}
           </p>
-          <div className='project-card--details__cta'>
+          <div className='project-card__details__cta'>
             <a
               href={githubLink}
               type='button'

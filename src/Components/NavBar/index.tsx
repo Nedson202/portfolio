@@ -12,7 +12,7 @@ const NavLinks = () => {
       <NavLink
         key={key}
         to={link}
-        className='navbar-navlinks--link'
+        className='navbar-navlinks__link'
       >
         {key}
       </NavLink>
@@ -24,7 +24,7 @@ const NavLinks = () => {
       {renderLinks}
       <a
         href={BLOG_URL}
-        className='navbar-navlinks--link'
+        className='navbar-navlinks__link'
         rel='noopener noreferrer'
         target='_blank'
       >

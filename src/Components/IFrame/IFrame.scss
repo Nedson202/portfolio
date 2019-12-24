@@ -33,13 +33,13 @@
     background: $white-2;
     position: relative;
 
-    &--title {
+    &__title {
       display: flex;
       justify-content: flex-end;
       font-size: 20px;
     }
 
-    &--action_buttons {
+    &__action_buttons {
       display: flex;
       height: 30px;
       margin-top: 15px;

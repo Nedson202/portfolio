@@ -8,19 +8,19 @@
     flex-direction: column;
     text-align: center;
 
-    &--name {
+    &__name {
       max-width: 60%;
       margin-top: 15%;
       font-size: 50px;
     }
 
-    &--detail {
+    &__detail {
       max-width: 50%;
       font-size: 24px;
       line-height: 35px;
     }
 
-    &--scroll_indicator {
+    &__scroll_indicator {
       margin-top: 24vh;
 
       p {
