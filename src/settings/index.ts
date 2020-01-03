@@ -21,7 +21,7 @@ export const THEME_ICON: IThemeProps = {
 export const THEME_ATTRIBUTE = 'data-theme';
 
 export const GET_TO_KNOW_ME = `
-  I am a passionate and experienced Software Engineer. With 2 years of
+  I am a Fullstack Software Engineer based in Nigeria. With 2 years of
   experience, I design backend systems with different languages and
   versatile with frontend engineering.
 `;
@@ -30,10 +30,6 @@ export const NAV_LINKS = [
   {
     key: 'Projects',
     link: '/projects',
-  },
-  {
-    key: 'About',
-    link: '/about',
   },
   {
     key: 'Contact',

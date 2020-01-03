@@ -18,11 +18,11 @@
     margin-top: 100px;
   }
 
-  &:nth-child(even) {
+  &:nth-child(odd) {
     margin-right: 15%;
   }
 
-  &:nth-child(odd) {
+  &:nth-child(even) {
     margin-left: 15%;
   }
 
