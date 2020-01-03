@@ -19,6 +19,8 @@ const Projects: React.FC = () => {
 
   return (
     <div>
+      <h1 className='center'>Personal Projects</h1>
+
       {projectsMap}
     </div>
   );

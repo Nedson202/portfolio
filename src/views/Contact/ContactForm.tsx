@@ -27,7 +27,7 @@ const ContactForm: React.FC<IContactFormProps> = ({
       netlify-honeypot='bot-field'
       data-netlify='true'
     >
-      <h2>Get In Touch</h2>
+      <h1>Get In Touch</h1>
       <div className='contact-item'>
         <label>
           Name

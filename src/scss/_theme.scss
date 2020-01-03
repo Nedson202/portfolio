@@ -3,11 +3,7 @@
     background: #0a0f1b;
     color: #e4e4e4;
 
-    a {
-      color: #e4e4e4;
-    }
-
-    i {
+    a, i, p {
       color: #e4e4e4;
     }
   }
@@ -68,6 +64,10 @@
 
         .btn-primary {
           border: 1px solid #aa6c39;
+        }
+
+        i {
+          color: #aa6c39;
         }
       }
     }
