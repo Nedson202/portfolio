@@ -1,12 +1,12 @@
 import * as React from 'react';
 
 import {
-  FLIP_THEME, LIGHT, STORAGE, THEME, THEME_ATTRIBUTE,
-  THEME_ICON,
+  DARK, FLIP_THEME, STORAGE, THEME,
+  THEME_ATTRIBUTE, THEME_ICON,
 } from '../../settings';
 
 const getCurrentTheme = () => {
-  const currentTheme: string = window.localStorage.getItem(THEME) || LIGHT;
+  const currentTheme: string = window.localStorage.getItem(THEME) || DARK;
 
   return currentTheme;
 };
@@ -17,7 +17,7 @@ const loadTheme = () => {
   window.document.documentElement.setAttribute(THEME_ATTRIBUTE, currentTheme);
 };
 
-const handleDarkModeToggle = (event: any) => {
+const handleDarkModeToggle = (event: StorageEvent) => {
   if (event.key !== THEME) {
     return;
   }

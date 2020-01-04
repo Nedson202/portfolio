@@ -14,7 +14,7 @@ interface IProjectCardProps {
 interface IProjectData {
   key: number;
   title: string;
-  image: any;
+  image: string;
   description: string;
   link: string;
   githubLink: string;
