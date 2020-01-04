@@ -1,9 +1,7 @@
 import * as React from 'react';
 
 import { errorsMap } from '../../settings';
-import {
-  IContactFormErrors, IContactFormValues, IEvent,
-} from '../../types';
+import { IContactFormErrors, IContactFormValues } from '../../types';
 import './Contact.scss';
 import ContactForm from './ContactForm';
 
@@ -23,7 +21,11 @@ const Contact: React.FC = () => {
   const [formValues, setFormValues] = React.useState(defaultFormData);
   const [formErrors, setFormErrors] = React.useState(defaultFormData);
 
-  const handleChange = (event: any) => {
+  const handleChange = (
+    event:
+      React.ChangeEvent<HTMLInputElement>
+      | React.ChangeEvent<HTMLTextAreaElement>,
+  ) => {
     event.preventDefault();
 
     const { name, value } = event.target;
@@ -34,7 +36,11 @@ const Contact: React.FC = () => {
     });
   };
 
-  const handleSingleFieldValidation = (event: IEvent) => {
+  const handleSingleFieldValidation = (
+    event:
+      React.ChangeEvent<HTMLInputElement>
+      | React.ChangeEvent<HTMLTextAreaElement>,
+  ) => {
     const { name, value } = event.target;
     let formErrorsData: IContactFormErrors = {
       ...formErrors,
@@ -73,7 +79,7 @@ const Contact: React.FC = () => {
     };
   };
 
-  const handleSubmit = (event: IEvent) => {
+  const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     const { hasEmptyField, formErrorsData } = handleAllFieldsValidation();

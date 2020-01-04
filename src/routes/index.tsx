@@ -4,7 +4,6 @@ import { Route, Switch } from 'react-router-dom';
 import NavBar from '../Components/NavBar';
 import NotFound from '../Components/NotFound';
 import RParticles from '../Components/Particles';
-import About from '../views/About';
 import Base from '../views/Base';
 import Contact from '../views/Contact';
 import Projects from '../views/ProjectList';
@@ -17,7 +16,6 @@ const Routes = () => (
     <Switch>
       <Route path='/' component={Base} exact={true} />
       <Route path='/projects' component={Projects} exact={true} />
-      <Route path='/about' component={About} exact={true} />
       <Route path='/contact' component={Contact} exact={true} />
       <Route component={NotFound} />
     </Switch>

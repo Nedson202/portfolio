@@ -80,33 +80,3 @@ const IFrame: React.FC<IFrameProps> = ({ title, link, iframeCloser }) => {
 };
 
 export default IFrame;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

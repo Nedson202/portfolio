@@ -37,15 +37,16 @@
       font-weight: 600;
       font-size: 18px;
       max-height: 30px;
+      padding-bottom: 5px;
       -webkit-transition: all .5s ease;
       -moz-transition: all .5s ease;
       transition: all .5s ease;
       cursor: pointer;
 
       &:hover {
-        -webkit-transition: all .5s ease;
-        -moz-transition: all .5s ease;
-        transition: all .5s ease;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        transition: all 1s ease;
         border-bottom: 1px solid black;
       }
     }

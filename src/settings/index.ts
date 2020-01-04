@@ -1,7 +1,12 @@
+import envelopeIcon from '../assets/envelope.png';
+import githubIcon from '../assets/github.png';
+import linkedInIcon from '../assets/linkedIn.png';
 import artMuseum from '../assets/projects/art-museum.png';
 import IPLookup from '../assets/projects/ip-web.png';
 import KStoreWeb from '../assets/projects/k-store-web.png';
 import Weconnect from '../assets/projects/weconnect.png';
+import twitterIcon from '../assets/twitter.png';
+
 import { IThemeProps } from '../types';
 import { IContactFormErrors } from './../types/index.d';
 
@@ -24,6 +29,10 @@ export const GET_TO_KNOW_ME = `
   I am a Fullstack Software Engineer based in Nigeria. With 2 years of
   experience, I design backend systems with different languages and
   versatile with frontend engineering.
+  <br />
+  I enjoy listening to diverse genres of music and when I am not coding,
+  you can find me playing Call Of Duty, watching debates, reading or watching
+  movies.
 `;
 
 export const NAV_LINKS = [
@@ -93,7 +102,7 @@ export const errorsMap: IContactFormErrors = {
 export const PARTICLES_JS_CONFIG: object = {
   particles: {
     number: {
-      value: 80,
+      value: 30,
       density: {
         enable: true,
         value_area: 800,
@@ -118,3 +127,30 @@ export const PARTICLES_JS_CONFIG: object = {
 };
 
 export const ENGINEER_NAME = 'Samson Negedu';
+
+export const SOCIAL_LINKS = [
+  {
+    id: 1,
+    icon: githubIcon,
+    link: 'http://github.com/Nedson202',
+    alt: 'Github icon',
+  },
+  {
+    id: 2,
+    icon: linkedInIcon,
+    link: 'https://www.linkedin.com/in/samson-negedu-b7229515a/',
+    alt: 'LinkedIn Icon',
+  },
+  {
+    id: 3,
+    icon: twitterIcon,
+    link: 'https://twitter.com/eight_wing',
+    alt: 'Twitter Icon',
+  },
+  {
+    id: 4,
+    icon: envelopeIcon,
+    link: 'mailto:samson.negedu.a@gmail.com',
+    alt: 'Mailto Icon',
+  },
+];

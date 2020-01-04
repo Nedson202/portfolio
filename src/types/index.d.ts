@@ -10,11 +10,3 @@ export interface IContactFormValues {
 }
 
 export interface IContactFormErrors extends IContactFormValues { }
-
-export interface IEvent {
-  target: {
-    name: string;
-    value: any;
-  };
-  preventDefault: () => void;
-}

@@ -4,9 +4,16 @@ import { IContactFormErrors, IContactFormValues } from '../../types';
 import './Contact.scss';
 
 interface IContactFormProps {
-  handleChange: any;
-  handleSubmit: any;
-  handleSingleFieldValidation: any;
+  handleChange: (
+    event:
+      React.ChangeEvent<HTMLInputElement>
+      | React.ChangeEvent<HTMLTextAreaElement>,
+  ) => void;
+  handleSubmit: (event: React.ChangeEvent<HTMLFormElement>) => void;
+  handleSingleFieldValidation: (
+    event: React.ChangeEvent<HTMLInputElement>
+      | React.ChangeEvent<HTMLTextAreaElement>,
+  ) => void;
   formValues: IContactFormValues;
   formErrors: IContactFormErrors;
 }
