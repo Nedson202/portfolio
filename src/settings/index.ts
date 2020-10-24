@@ -25,16 +25,6 @@ export const THEME_ICON: IThemeProps = {
 };
 export const THEME_ATTRIBUTE = 'data-theme';
 
-export const GET_TO_KNOW_ME = `
-  I am a Fullstack Software Engineer based in Nigeria. With 2 years of
-  experience, I design backend systems with different languages and
-  versatile with frontend engineering.
-  <br />
-  I enjoy listening to diverse genres of music and when I am not coding,
-  you can find me playing Call Of Duty, watching debates, reading or watching
-  movies.
-`;
-
 export const NAV_LINKS = [
   {
     key: 'Projects',
